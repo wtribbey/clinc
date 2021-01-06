@@ -1,0 +1,115 @@
+/home/will/PycharmProjects/clinc/venv/bin/python /home/will/PycharmProjects/clinc/clincWeather.py
+loading request with coordinates of louisville ....
+{
+  "request": "{\"ai_version\": \"9d50ce6e-4e2c-404e-8dc4-2ccbdee7fb2a\", \"device\": \"default\", \"dialog\": \"\", \"lat\": 38.328732, \"lon\": -85.764771, \"time_offset\": 0, \"external_user_id\": \"platform_user-bbf6fbf0-8013-4edc-8f37-e1bc37661ad8\", \"query\": \"what's the weather like in louisville\", \"qid\": \"c917ec63-228e-48bb-a64c-7f286cdf41b1\", \"state\": \"weather_forecast\", \"slots\": {\"_LOCATION_\": {\"type\": \"string\", \"values\": [{\"status\": \"EXTRACTED\", \"tokens\": \"louisville\"}]}}, \"sentiment\": 1, \"intent_probability\": 0.99999487892345, \"session_id\": \"fe3cac2303114f679057072ec67c133b\", \"intent\": \"weather_forecast_start\", \"consecutive_oos_number\": 0, \"event_list\": [{\"slot\": \"_LOCATION_\", \"tokens\": \"louisville\", \"old_status\": \"UNKNOWN\", \"new_status\": \"EXTRACTED\", \"index\": 0}]}",
+  "weather": {
+    "cod": "404",
+    "message": "city not found"
+  }
+}
+
+
+
+loading request with no location data (ann arbor)  ....
+{
+  "request": "{\"ai_version\": \"9d50ce6e-4e2c-404e-8dc4-2ccbdee7fb2a\", \"device\": \"default\", \"dialog\": \"\", \"lat\": 0, \"lon\": 0, \"time_offset\": 0, \"external_user_id\": \"platform_user-bbf6fbf0-8013-4edc-8f37-e1bc37661ad8\", \"query\": \"what's the weather like in ann arbor\", \"qid\": \"c917ec63-228e-48bb-a64c-7f286cdf41b1\", \"state\": \"weather_forecast\", \"slots\": {}, \"sentiment\": 1, \"intent_probability\": 0.99999487892345, \"session_id\": \"fe3cac2303114f679057072ec67c133b\", \"intent\": \"weather_forecast_start\", \"consecutive_oos_number\": 0, \"event_list\": [{\"old_status\": \"UNKNOWN\", \"new_status\": \"EXTRACTED\", \"index\": 0}]}",
+  "weather": {
+    "coord": {
+      "lon": -83.7409,
+      "lat": 42.2776
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 275.25,
+      "feels_like": 270.95,
+      "temp_min": 274.82,
+      "temp_max": 276.15,
+      "pressure": 1026,
+      "humidity": 80
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.1,
+      "deg": 20
+    },
+    "clouds": {
+      "all": 90
+    },
+    "dt": 1609953635,
+    "sys": {
+      "type": 1,
+      "id": 3313,
+      "country": "US",
+      "sunrise": 1609938225,
+      "sunset": 1609971464
+    },
+    "timezone": -18000,
+    "id": 4984247,
+    "name": "Ann Arbor",
+    "cod": 200
+  }
+}
+
+
+
+loading request with location=detroit ....
+{'type': 'string', 'values': [{'status': 'EXTRACTED', 'tokens': 'detroit'}]}
+{
+  "request": "{\"ai_version\": \"9d50ce6e-4e2c-404e-8dc4-2ccbdee7fb2a\", \"device\": \"default\", \"dialog\": \"\", \"lat\": 0, \"lon\": 0, \"time_offset\": 0, \"external_user_id\": \"platform_user-bbf6fbf0-8013-4edc-8f37-e1bc37661ad8\", \"query\": \"what's the weather like in detroit\", \"qid\": \"c917ec63-228e-48bb-a64c-7f286cdf41b1\", \"state\": \"weather_forecast\", \"slots\": {\"_LOCATION_\": {\"type\": \"string\", \"values\": [{\"status\": \"EXTRACTED\", \"tokens\": \"detroit\"}]}}, \"sentiment\": 1, \"intent_probability\": 0.99999487892345, \"session_id\": \"fe3cac2303114f679057072ec67c133b\", \"intent\": \"weather_forecast_start\", \"consecutive_oos_number\": 0, \"event_list\": [{\"slot\": \"_LOCATION_\", \"tokens\": \"detroit\", \"old_status\": \"UNKNOWN\", \"new_status\": \"EXTRACTED\", \"index\": 0}]}",
+  "weather": {
+    "coord": {
+      "lon": -84.388,
+      "lat": 33.749
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 282.23,
+      "feels_like": 278.77,
+      "temp_min": 280.15,
+      "temp_max": 283.71,
+      "pressure": 1023,
+      "humidity": 45
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.68,
+      "deg": 125
+    },
+    "clouds": {
+      "all": 1
+    },
+    "dt": 1609953507,
+    "sys": {
+      "type": 1,
+      "id": 4155,
+      "country": "US",
+      "sunrise": 1609936976,
+      "sunset": 1609973025
+    },
+    "timezone": -18000,
+    "id": 4180439,
+    "name": "Atlanta",
+    "cod": 200
+  }
+}
+
+
+done.
+
+Process finished with exit code 0
