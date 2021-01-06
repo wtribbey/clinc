@@ -2,7 +2,7 @@ import requests
 import json
 
 def get_api_request(req_data):
-    api_key = 'e09ff1dbd4498040f51b500aed04e699'
+    api_key = '........'
 
     if 'lat' in req_data and 'lon' in req_data:
         lat = req_data['lat']
@@ -21,13 +21,13 @@ def get_api_request(req_data):
                 if len(vals) >0:
                     place = vals[0]['tokens']
 
-    api_url = "https://api.openweathermap.org/data/2.5/weather?q=ann arbor&appid=e09ff1dbd4498040f51b500aed04e699"
-
+    api_url = "https://api.openweathermap.org/data/2.5/weather?q=ann arbor&appid=?????"
+09ff1dbd4498040
     if float(lat) != 0 and float(lon) != 0:
-        api_url = 'https://api.openweathermap.org/data/2.5/weather?q=lat='+str(lat)+'&lon='+str(lon)+'&appid=e09ff1dbd4498040f51b500aed04e699'
+        api_url = 'https://api.openweathermap.org/data/2.5/weather?q=lat='+str(lat)+'&lon='+str(lon)+'&appid=????'
     elif None != location:
         print(location)
-        api_url = 'https://api.openweathermap.org/data/2.5/weather?q=atlanta'+'&appid=e09ff1dbd4498040f51b500aed04e699'
+        api_url = 'https://api.openweathermap.org/data/2.5/weather?q=atlanta'+'&appid=????'
     else:
         pass
 
