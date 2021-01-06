@@ -1,0 +1,37 @@
+{
+  "ai_version": "9d50ce6e-4e2c-404e-8dc4-2ccbdee7fb2a",
+  "device": "default",
+  "dialog": "",
+  "lat": 0,
+  "lon": 0,
+  "time_offset": 0,
+  "external_user_id": "platform_user-bbf6fbf0-8013-4edc-8f37-e1bc37661ad8",
+  "query": "what's the weather like in detroit",
+  "qid": "c917ec63-228e-48bb-a64c-7f286cdf41b1",
+  "state": "weather_forecast",
+  "slots": {
+    "_LOCATION_": {
+      "type": "string",
+      "values": [
+        {
+          "status": "EXTRACTED",
+          "tokens": "detroit"
+        }
+      ]
+    }
+  },
+  "sentiment": 1,
+  "intent_probability": 0.99999487892345,
+  "session_id": "fe3cac2303114f679057072ec67c133b",
+  "intent": "weather_forecast_start",
+  "consecutive_oos_number": 0,
+  "event_list": [
+    {
+      "slot": "_LOCATION_",
+      "tokens": "detroit",
+      "old_status": "UNKNOWN",
+      "new_status": "EXTRACTED",
+      "index": 0
+    }
+  ]
+}
